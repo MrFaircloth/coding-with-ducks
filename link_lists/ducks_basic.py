@@ -1,4 +1,5 @@
-# ducks.py
+# ducks_basic.py
+''' Link Lists '''
 
 class duck:
     ''' This duck represents a single element in a list.
@@ -50,15 +51,12 @@ def main():
 
         while next_duck.get_follower() != None: # loop through row to find caboose
             next_duck = next_duck.get_follower()
-            
+
         next_duck.set_follower(new_duck) # have the new duck follow the caboose
         print('{} follows {}'.format(new_duck.get_name(), next_duck.get_name()))
 
-    
-
-        
-
     return 0
 
+# main gate - runs the main method ONLY if the program was called directly. 
 if __name__ == '__main__':
     exit(main())
